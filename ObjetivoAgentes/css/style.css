@@ -1,0 +1,121 @@
+
+/*Hero*/
+
+.header{
+    background-color: #353535;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.columna1{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.columna1 h1{
+    font-size: 5rem;
+    
+}
+
+.columna1 p{
+    font-size: 1.3rem;
+    padding: 1rem 4rem 0 4rem;
+    
+}
+
+/*Sobre Planificar*/
+
+.sobrePlanificar{
+    background-color: #FF7E00;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.porquePlanificar{
+    padding: 4rem 4rem 4rem 4rem;
+}
+
+.porquePlanificar p{
+    font-size: 1.3rem;
+    padding: 1rem 4rem 0 4rem;
+}
+
+/*Ruta al Exito*/
+
+.rutaAlExito{
+    background-color: #353535;
+    color: #fff;
+    padding: 5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;  
+    
+}
+
+.inputs{
+    max-width: 50%;
+    
+    
+}
+
+.btnCalcularObjetivo{
+    background-color: #FF7E00;
+    color: white;
+    padding: 15px;
+    
+    margin-top: 2rem;;
+    border-radius: 1rem;
+
+}
+
+.contenedorInputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    align-items: center;
+    margin-top: 3rem;
+    
+}
+
+.respuestaInputs{
+    font-size: 1.5rem;
+    
+}
+
+.calculandoEfectividades p{
+    font-size: 1.3rem;
+    padding: 1rem 4rem 0 4rem;
+}
+
+.calculandoEfectividades{
+    padding: 4rem 4rem 4rem 4rem;
+}
+
+
+.contenedorResultados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: #FF7E00;
+    color: white;
+    border-radius: 1rem;
+    padding: 3rem;
+
+}
