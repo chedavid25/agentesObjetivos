@@ -115,9 +115,479 @@
     margin-top: 3rem;
     background-color: #FF7E00;
     color: white;
-    border-radius: 1rem;
+    border-radius: 0;
     padding: 3rem;
 
 }
 
+.contenedorResultados h3{
+    font-size: 2rem;
+}
+
+.contenedorResultados p{
+    font-size: 1.3rem;
+}
+
+.contenedorResultados span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.respuestaObjetivo{
+    margin-top: 3rem;
+}
+
 /*Medias*/
+
+/* Estilos específicos para tablet */
+
+@media only screen and (max-width: 1320px) {
+    .columna1 h1 {
+        font-size: 2rem;
+    }
+
+    .columna1 p {
+        font-size: 0.8rem;
+    }
+
+    .porquePlanificar {
+        padding: 1rem;
+    }
+
+    .porquePlanificar p {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem 0 1rem;
+    }
+
+    .rutaAlExito {
+        padding: 2rem;
+    }
+
+    .contenedorInputs {
+        max-width: 100%;
+    }
+
+    .header{
+        background-color: #353535;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        height: 90vh;
+        flex-direction: column;
+    }
+
+    .columna2{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+
+    }
+
+    .columna2 img{
+        width: 100%;
+    }
+
+    .columna1 h1{
+        font-size: 3rem;
+        margin-top: 2rem;
+        
+    }
+    
+    .columna1 p{
+        font-size: 1.6rem;
+        padding: 1rem 0 0 0;
+        
+    }
+
+    .porquePlanificar{
+        padding: 4rem 1rem 0 1rem ;
+    }
+
+    .porquePlanificar h3{
+        font-size: 3rem;
+    }
+    
+    .porquePlanificar p{
+        font-size: 1.6rem;
+        padding: 1rem 0 0 0 ;
+    }
+
+    .rutaAlExito{
+        background-color: #353535;
+        color: #fff;
+        padding: 3rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin: 1rem auto;
+        
+        
+        
+        
+    }
+
+    .inputs{
+        max-width: 100%;
+        
+        
+    }
+
+    .calculandoEfectividades{
+        padding: 4rem 1rem 1rem 1rem;
+    }
+
+    .calculandoEfectividades p{
+        font-size: 1.3rem;
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 1.6rem;
+    }
+
+    .calculandoEfectividades h3{
+        font-size: 3rem;
+    }
+
+    .contenedorInputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 2rem;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .contenedorResultados h3{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .contenedorResultados p{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .contenedorResultados{
+        border-radius: 0;
+    padding: 1rem;
+    }
+
+    .container h3{
+        font-size: 3rem;
+    }
+
+    .container p{
+        font-size: 1.6rem;
+    }
+
+    .tusEfectividades{
+        font-size: 2.3rem;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .columna1 h1 {
+        font-size: 2rem;
+    }
+
+    .columna1 p {
+        font-size: 0.8rem;
+    }
+
+    .porquePlanificar {
+        padding: 1rem;
+    }
+
+    .porquePlanificar p {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem 0 1rem;
+    }
+
+    .rutaAlExito {
+        padding: 2rem;
+    }
+
+    .contenedorInputs {
+        max-width: 100%;
+    }
+
+    .header{
+        background-color: #353535;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        height: 90vh;
+        flex-direction: column;
+    }
+
+    .columna2{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+
+    }
+
+    .columna2 img{
+        width: 100%;
+    }
+
+    .columna1 h1{
+        font-size: 3rem;
+        margin-top: 2rem;
+        
+    }
+    
+    .columna1 p{
+        font-size: 1.6rem;
+        padding: 1rem 0 0 0;
+        
+    }
+
+    .porquePlanificar{
+        padding: 4rem 1rem 0 1rem ;
+    }
+
+    .porquePlanificar h3{
+        font-size: 3rem;
+    }
+    
+    .porquePlanificar p{
+        font-size: 1.6rem;
+        padding: 1rem 0 0 0 ;
+    }
+
+    .rutaAlExito{
+        background-color: #353535;
+        color: #fff;
+        padding: 3rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin: 1rem auto;
+        
+        
+        
+        
+    }
+
+    .inputs{
+        max-width: 100%;
+        
+        
+    }
+
+    .calculandoEfectividades{
+        padding: 4rem 1rem 1rem 1rem;
+    }
+
+    .calculandoEfectividades p{
+        font-size: 1.3rem;
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 1.6rem;
+    }
+
+    .calculandoEfectividades h3{
+        font-size: 3rem;
+    }
+
+    .contenedorInputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 2rem;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .contenedorResultados h3{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .contenedorResultados p{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .contenedorResultados{
+        border-radius: 0;
+    padding: 1rem;
+    }
+
+    .container h3{
+        font-size: 3rem;
+    }
+
+    .container p{
+        font-size: 1.6rem;
+    }
+
+    .tusEfectividades{
+        font-size: 2.3rem;
+
+    }
+}
+
+/* Estilos específicos para celular */
+
+@media only screen and (max-width: 480px) {
+    .columna1 h1 {
+        font-size: 2rem;
+    }
+
+    .columna1 p {
+        font-size: 0.8rem;
+    }
+
+    .porquePlanificar {
+        padding: 1rem;
+    }
+
+    .porquePlanificar p {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem 0 1rem;
+    }
+
+    .rutaAlExito {
+        padding: 3rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin: 1rem auto;
+    }
+
+    .contenedorInputs {
+        max-width: 100%;
+    }
+
+    .header{
+        background-color: #353535;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        height: 90vh;
+        flex-direction: column;
+    }
+
+    .columna2{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+
+    }
+
+    .columna2 img{
+        width: 100%;
+    }
+
+    .columna1 h1{
+        font-size: 3rem;
+        margin-top: 2rem;
+        
+    }
+    
+    .columna1 p{
+        font-size: 1.6rem;
+        padding: 1rem 0 0 0;
+        
+    }
+
+    .porquePlanificar{
+        padding: 4rem 1rem 0 1rem ;
+    }
+
+    .porquePlanificar h3{
+        font-size: 3rem;
+    }
+    
+    .porquePlanificar p{
+        font-size: 1.6rem;
+        padding: 1rem 0 0 0 ;
+    }
+
+    .rutaAlExito{
+        background-color: #353535;
+        color: #fff;
+        padding: 3rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-radius: 0;  
+        
+    }
+
+    .inputs{
+        max-width: 100%;
+        
+        
+    }
+
+    .calculandoEfectividades{
+        padding: 4rem 1rem 1rem 1rem;
+    }
+
+    .calculandoEfectividades p{
+        font-size: 1.3rem;
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 1.6rem;
+    }
+
+    .calculandoEfectividades h3{
+        font-size: 3rem;
+    }
+
+    .contenedorInputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 2rem;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .contenedorResultados h3{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .contenedorResultados p{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .contenedorResultados{
+        border-radius: 0;
+    padding: 1rem;
+    }
+
+    .container h3{
+        font-size: 3rem;
+    }
+
+    .container p{
+        font-size: 1.6rem;
+    }
+
+    .tusEfectividades{
+        font-size: 2.3rem;
+
+    }
+
+    .respuestaComisionPromedio{
+        display: flex;
+        flex-direction: column;
+    }
+}

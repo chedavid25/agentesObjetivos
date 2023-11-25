@@ -73,7 +73,26 @@ function calcularGestion() {
     respuestaCantidadAcm.textContent = `Cantidad de ACM: ${cantidadAcm.toFixed(2)}`;
     respuestaCantidadPreListing.textContent = `Cantidad de Pre-Listings: ${cantidadPreListing.toFixed(2)}`;
     respuestaComisionPromedio.textContent  = "Tu comisión Promedio es de: $" + comisionPromedio.toFixed(2) + " y de bolsillo $" + comisionPromedio.toFixed(2) * 0.45;
-    
+    respuestaComisionPromedio.style.backgroundColor = "#353535"
+    respuestaComisionPromedio.style.padding = "1rem"
+    respuestaComisionPromedio.style.color = "#f0f0f0"
+    respuestaComisionPromedio.style.borderRadius = "1rem"
+    respuestaCantidadPreListing.style.backgroundColor = "#353535"
+    respuestaCantidadPreListing.style.padding = "1rem"
+    respuestaCantidadPreListing.style.color = "#f0f0f0"
+    respuestaCantidadPreListing.style.borderRadius = "1rem"
+    respuestaCantidadAcm.style.backgroundColor = "#f0f0f0"
+    respuestaCantidadAcm.style.padding = "1rem"
+    respuestaCantidadAcm.style.color = "#353535"
+    respuestaCantidadAcm.style.borderRadius = "1rem"
+    respuestaCantidadCaptaciones.style.backgroundColor = "#353535"
+    respuestaCantidadCaptaciones.style.padding = "1rem"
+    respuestaCantidadCaptaciones.style.color = "#f0f0f0"
+    respuestaCantidadCaptaciones.style.borderRadius = "1rem"
+    respuestaCantidadVentas.style.backgroundColor = "#f0f0f0"
+    respuestaCantidadVentas.style.padding = "1rem"
+    respuestaCantidadVentas.style.color = "#353535"
+    respuestaCantidadVentas.style.borderRadius = "1rem"
 
 
 }
