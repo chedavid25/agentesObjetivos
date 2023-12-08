@@ -104,8 +104,14 @@ function calcularGestion() {
   btnCalcularGestion.addEventListener('click', calcularGestion);
 
 
-  //Dependiendo de la cartera propia o no
-
  
+
+  window.onload = function() {
+    let codigoAcceso = prompt("Escribe el codigo de acceso");
+
+    if (codigoAcceso !== "imala2024") {
+        window.location.href = "error.html";
+    }
+}
 
 
