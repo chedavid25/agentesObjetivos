@@ -12,9 +12,17 @@ a{
     font-size: 1.5rem;
     align-items: center;
     display: flex;
-    margin: 3rem 50rem 0  50rem;
+    
     text-align: center;
     justify-content: center;
+}
+
+a:hover{
+    background-color: white;
+    color: white;
+    text-decoration: none;
+    color: #FF7E00;
+    transition: 0.5s;
 }
 
 h1{
@@ -36,4 +44,36 @@ h1{
   .logo-container img {
     width: 100%;
     max-width: 300px;
+  }
+
+  @media only screen and (max-width: 1320px) {
+    a{
+        color: white;
+        text-decoration: none;
+        background-color: #FF7E00;
+        padding: 1rem;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        align-items: center;
+        display: flex;
+        
+        text-align: center;
+        justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    a{
+        color: white;
+        text-decoration: none;
+        background-color: #FF7E00;
+        padding: 1rem;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        align-items: center;
+        display: flex;
+        
+        text-align: center;
+        justify-content: center;
+    }
   }
