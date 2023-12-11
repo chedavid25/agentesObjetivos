@@ -69,11 +69,11 @@ function calcularGestion() {
   
     // Mostrar los resultados en los elementos correspondientes
     
-    respuestaCantidadVentas.textContent = `Cantidad de Ventas: ${cantidadVentas} anuales o ${(cantidadVentas/12).toFixed(2)} mensuales`;
+    respuestaCantidadVentas.textContent = `Cantidad de Ventas: ${cantidadVentas.toFixed(2)} anuales o ${(cantidadVentas/12).toFixed(2)} mensuales`;
     respuestaCantidadCaptaciones.textContent = `Cantidad de Captaciones: ${cantidadCaptaciones.toFixed(2)} anuales o ${(cantidadCaptaciones/12).toFixed(2)} mensuales`;
     respuestaCantidadAcm.textContent = `Cantidad de ACM: ${cantidadAcm.toFixed(2)} anuales o ${(cantidadAcm/12).toFixed(2)} mensuales`;
     respuestaCantidadPreListing.textContent = `Cantidad de Pre-Listings: ${cantidadPreListing.toFixed(2)} anuales o ${(cantidadPreListing/12).toFixed(2)} mensuales`;
-    respuestaComisionPromedio.textContent  = "Tu comisión Promedio es de: $" + comisionPromedio.toFixed(2) + " y de bolsillo $" + (comisionPromedio * 0.45).toFixed(2);
+    respuestaComisionPromedio.textContent  = "Tu comisión Promedio es de: $" + comisionPromedio.toFixed(2);
     
 
     //respuestaComisionPromedio.style.backgroundColor = "#353535"
