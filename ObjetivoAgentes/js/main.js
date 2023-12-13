@@ -28,6 +28,8 @@ let acmCaptacion = document.querySelector('.acmCaptacion');
 let captacionVenta = document.querySelector('.captacionVenta');
 let carteraBusquedas = document.querySelector('.carteraBusquedas');
 let carteraPropia = document.querySelector('.carteraPropia');
+let listingPropio = document.querySelector('.listingPropio');
+let busquedas = document.querySelector('.busquedas');
 
 /* LLamados a las respuestas de gestión */
 
@@ -38,6 +40,8 @@ let respuestaCantidadCaptaciones = document.querySelector('.respuestaCantidadCap
 let respuestaCantidadVentas = document.querySelector('.respuestaCantidadVentas');
 let btnCalcularGestion = document.querySelector('.btnCalcularGestion');
 let respuestaComisionPromedio = document.querySelector('.respuestaComisionPromedio');
+let respuestaCantidadVentasPropias = document.querySelector('.respuestaCantidadVentasPropias');
+let respuestaCantidadVentasBusuqedas = document.querySelector('.respuestaCantidadVentasBusuqedas');
 
 
 
@@ -51,8 +55,10 @@ function calcularGestion() {
     let captacionVentaValor = parseFloat(captacionVenta.value)/100;
     let acmCaptacionValor = parseFloat(acmCaptacion.value)/100;
     let preListingAcmValor = parseFloat(preListingAcm.value)/100;
+    let listingPropioValor = parseFloat(listingPropio.value)/100;
+    let busquedasValor = parseFloat(busquedas.value)/100;
     
-   
+   console.log(listingPropioValor);
 
     
     
@@ -69,11 +75,16 @@ function calcularGestion() {
   
     // Mostrar los resultados en los elementos correspondientes
     
-    respuestaCantidadVentas.textContent = `Cantidad de Ventas: ${cantidadVentas.toFixed(2)} anuales o ${(cantidadVentas/12).toFixed(2)} mensuales`;
-    respuestaCantidadCaptaciones.textContent = `Cantidad de Captaciones: ${cantidadCaptaciones.toFixed(2)} anuales o ${(cantidadCaptaciones/12).toFixed(2)} mensuales`;
-    respuestaCantidadAcm.textContent = `Cantidad de ACM: ${cantidadAcm.toFixed(2)} anuales o ${(cantidadAcm/12).toFixed(2)} mensuales`;
-    respuestaCantidadPreListing.textContent = `Cantidad de Pre-Listings: ${cantidadPreListing.toFixed(2)} anuales o ${(cantidadPreListing/12).toFixed(2)} mensuales`;
-    respuestaComisionPromedio.textContent  = "Tu comisión Promedio es de: $" + comisionPromedio.toFixed(2);
+    respuestaCantidadVentas.textContent = `Cantidad de transacciones totales: ${cantidadVentas.toFixed(2)} anuales o ${(cantidadVentas / 12).toFixed(2)} mensuales`;
+    respuestaCantidadVentasPropias.textContent = `Cantidad de transacciones de mi listing: ${(cantidadVentas * listingPropioValor).toFixed(2)} anuales o ${(cantidadVentas / 12 * listingPropioValor).toFixed(2)} mensuales`;
+respuestaCantidadVentasBusuqedas.textContent = `Cantidad de transacciones por búsquedas: ${(cantidadVentas * busquedasValor).toFixed(2)} anuales o ${(cantidadVentas / 12 * busquedasValor).toFixed(2)} mensuales`;
+
+    
+    respuestaCantidadCaptaciones.textContent = `Cantidad de Captaciones: ${(cantidadCaptaciones * listingPropioValor).toFixed(2)} anuales o ${(cantidadCaptaciones * listingPropioValor / 12).toFixed(2)} mensuales`;
+    respuestaCantidadAcm.textContent = `Cantidad de ACM: ${(cantidadAcm * listingPropioValor).toFixed(2)} anuales o ${(cantidadAcm / 12 * listingPropioValor).toFixed(2)} mensuales`;
+    respuestaCantidadPreListing.textContent = `Cantidad de Pre-Listings: ${(cantidadPreListing * listingPropioValor).toFixed(2)} anuales o ${(cantidadPreListing / 12 * listingPropioValor).toFixed(2)} mensuales`; 
+    respuestaComisionPromedio.textContent = "Tu comisión Promedio es de: $" + comisionPromedio.toFixed(2);
+    
     
 
     //respuestaComisionPromedio.style.backgroundColor = "#353535"
@@ -97,6 +108,7 @@ function calcularGestion() {
     respuestaCantidadVentas.style.color = "#353535"
     respuestaCantidadVentas.style.borderRadius = "1rem"
 
+    respuestaCantidadVentasBusuqedas.style.color = "#353535"
 
 }
   
